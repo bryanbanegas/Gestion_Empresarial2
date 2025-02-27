@@ -1,0 +1,3 @@
+/home/bryan/Documents/VSCode/Gestion_Empresarial/build/CMakeFiles/GPS.dir
+/home/bryan/Documents/VSCode/Gestion_Empresarial/build/CMakeFiles/edit_cache.dir
+/home/bryan/Documents/VSCode/Gestion_Empresarial/build/CMakeFiles/rebuild_cache.dir
