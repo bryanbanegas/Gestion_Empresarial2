@@ -12,3 +12,14 @@ void Inventario::imprimir(){
         cout<<"ID: "<<claves[i].id<<" Nombre: "<<claves[i].nombre<<endl;
     }
 }
+
+datosInventario Inventario::buscar(int id){
+    datosInventario datos;
+    for(int i=0;i<numeroClaves;i++){
+        if(claves[i].id==id){
+            datos=claves[i];
+            return datos;
+        }
+    }
+    return datos;
+}

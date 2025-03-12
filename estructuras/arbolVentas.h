@@ -3,7 +3,7 @@
 
 #include "/home/bryan/Documents/VSCode/Gestion_Empresarial/clases/ventas.h"
 
-struct datos{
+struct datosArbolVentas{
     int idVenta;
     int idCliente;
     string fecha;
@@ -16,14 +16,15 @@ class ArbolVentas{
 public:
     Ventas *root;
     int num;
-    datos dato;
+    datosArbolVentas dato;
 
     ArbolVentas(int num);
 
-    void buscar(int clave);
+    datosVentas buscar(int clave);
     void insertar(int clave, int idcliente, string fecha, int cantidad, double total);
     void imprimir();
 private:
+    datosVentas search(int clave,Ventas nodo);
     void split(Ventas *nodo1,int i, Ventas *nodo2);
     void nonfullInsert(Ventas *nodo,int clave);
     void print(Ventas nodoArbol);

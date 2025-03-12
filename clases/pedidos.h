@@ -23,6 +23,8 @@ public:
 
     Pedidos(int num);
     void imprimir();
+    datosPedidos buscar(int id);
+    bool confirmar(int id);
 };
 
 #endif

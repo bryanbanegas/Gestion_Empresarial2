@@ -3,7 +3,7 @@
 
 #include "/home/bryan/Documents/VSCode/Gestion_Empresarial/clases/empleados.h"
 
-struct datos{
+struct datosArbolEmpleados{
     int id;
     string nombre;
     string departamento;
@@ -16,7 +16,7 @@ class ArbolEmpleados{
 public:
     Empleados *root;
     int num;
-    datos dato;
+    datosArbolEmpleados dato;
 
     ArbolEmpleados(int num);
 

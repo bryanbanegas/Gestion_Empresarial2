@@ -20,7 +20,8 @@ public:
     int numeroClaves;
     Empleados **hijos;
     bool hoja;
-
+    
+    //aqui escribi nicki
     Empleados(int num);
     void imprimir();
     datosEmpleados buscar(int id);

@@ -24,6 +24,7 @@ public:
 
     Ventas(int num);
     void imprimir();
+    datosVentas buscar(int id);
 };
 
 #endif

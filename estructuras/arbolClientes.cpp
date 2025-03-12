@@ -10,7 +10,10 @@ datosClientes ArbolClientes::buscar(int clave){
 }
 
 datosClientes ArbolClientes::search(int clave,Clientes nodo){
-    return nodo.buscar(clave);
+    datosClientes datos=nodo.buscar(clave);
+    if(!datos.nombre.empty()){
+        return datos;
+    }
 
     if(!nodo.hoja){
         for(int i=0;i<=nodo.numeroClaves;i++){
@@ -19,6 +22,7 @@ datosClientes ArbolClientes::search(int clave,Clientes nodo){
             }
         }
     }
+    return datos;
 }
 
 void ArbolClientes::insertar(int clave, string nombre, string correo, string telefono, double saldo){

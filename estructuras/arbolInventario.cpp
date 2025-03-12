@@ -5,8 +5,23 @@ ArbolInventario::ArbolInventario(int num){
     root=new Inventario(num);
 }
 
-void ArbolInventario::buscar(int clave){
+datosInventario ArbolInventario::buscar(int clave){
+    return search(clave,*root);
+}
 
+datosInventario ArbolInventario::search(int clave,Inventario nodo){
+    datosInventario datos=nodo.buscar(clave);
+    if(!datos.nombre.empty()){
+        return datos;
+    }
+    if(!nodo.hoja){
+        for(int i=0;i<=nodo.numeroClaves;i++){
+            if(nodo.hijos[i]!=nullptr){
+                search(clave,*nodo.hijos[i]);
+            }
+        }
+    }
+    return datos;
 }
 
 void ArbolInventario::insertar(int clave, string nombre, string categoria,int cantidad, double precio, bool estado){

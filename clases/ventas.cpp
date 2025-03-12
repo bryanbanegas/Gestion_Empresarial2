@@ -12,3 +12,11 @@ void Ventas::imprimir(){
         cout<<"ID de Venta: "<<claves[i].idVenta<<" ID de cliente: "<<claves[i].idCliente<<endl;
     }
 }
+
+datosVentas Ventas::buscar(int id){
+    for(int i=0;i<numeroClaves;i++){
+        if(claves[i].idVenta==id){
+            return claves[i];
+        }
+    }
+}

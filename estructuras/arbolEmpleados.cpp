@@ -10,8 +10,10 @@ datosEmpleados ArbolEmpleados::buscar(int clave){
 }
 
 datosEmpleados ArbolEmpleados::search(int clave,Empleados nodo){
-    return nodo.buscar(clave);
-
+    datosEmpleados datos=nodo.buscar(clave);
+    if(!datos.nombre.empty()){
+        return datos;
+    }
     if(!nodo.hoja){
         for(int i=0;i<=nodo.numeroClaves;i++){
             if(nodo.hijos[i]!=nullptr){
@@ -19,6 +21,7 @@ datosEmpleados ArbolEmpleados::search(int clave,Empleados nodo){
             }
         }
     }
+    return datos;
 }
 
 void ArbolEmpleados::insertar(int clave, string nombre, string departamento, string puesto, double salario, bool estado){

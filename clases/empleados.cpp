@@ -14,9 +14,12 @@ void Empleados::imprimir(){
 }
 
 datosEmpleados Empleados::buscar(int id){
+    datosEmpleados datos;
     for(int i=0;i<numeroClaves;i++){
         if(claves[i].id==id){
-            return claves[i];
+            datos=claves[i];
+            return datos;
         }
     }
+    return datos;
 }

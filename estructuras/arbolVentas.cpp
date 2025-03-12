@@ -5,8 +5,20 @@ ArbolVentas::ArbolVentas(int num){
     root=new Ventas(num);
 }
 
-void ArbolVentas::buscar(int clave){
+datosVentas ArbolVentas::buscar(int clave){
+    return search(clave,*root);
+}
 
+datosVentas ArbolVentas::search(int clave,Ventas nodo){
+    return nodo.buscar(clave);
+
+    if(!nodo.hoja){
+        for(int i=0;i<=nodo.numeroClaves;i++){
+            if(nodo.hijos[i]!=nullptr){
+                search(clave,*nodo.hijos[i]);
+            }
+        }
+    }
 }
 
 void ArbolVentas::insertar(int clave, int idcliente, string fecha, int cantidad, double total){

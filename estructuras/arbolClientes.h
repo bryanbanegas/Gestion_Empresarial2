@@ -3,7 +3,7 @@
 
 #include "/home/bryan/Documents/VSCode/Gestion_Empresarial/clases/clientes.h"
 
-struct datos{
+struct datosArbolClientes{
     int id;
     string nombre;
     string correo;
@@ -16,7 +16,7 @@ class ArbolClientes{
 public:
     Clientes *root;
     int num;
-    datos dato;
+    datosArbolClientes dato;
 
     ArbolClientes(int num);
 

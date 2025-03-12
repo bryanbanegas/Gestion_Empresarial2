@@ -5,8 +5,44 @@ ArbolPedidos::ArbolPedidos(int num){
     root=new Pedidos(num);
 }
 
-void ArbolPedidos::buscar(int clave){
+bool ArbolPedidos::confirmar(int clave){
+    return confirmarPedido(clave,*root);
+}
 
+bool ArbolPedidos::confirmarPedido(int clave,Pedidos nodo){
+    if(nodo.confirmar(clave)){
+        return true;
+    }
+
+    if(!nodo.hoja){
+        for(int i=0;i<=nodo.numeroClaves;i++){
+            if(nodo.hijos[i]!=nullptr){
+                confirmarPedido(clave,*nodo.hijos[i]);
+            }
+        }
+    }
+
+    return false;
+}
+
+datosPedidos ArbolPedidos::buscar(int clave){
+    return search(clave,*root);
+}
+
+datosPedidos ArbolPedidos::search(int clave,Pedidos nodo){
+    datosPedidos datos=nodo.buscar(clave);
+    if(!datos.cliente.empty()){
+        return datos;
+    }
+
+    if(!nodo.hoja){
+        for(int i=0;i<=nodo.numeroClaves;i++){
+            if(nodo.hijos[i]!=nullptr){
+                search(clave,*nodo.hijos[i]);
+            }
+        }
+    }
+    return datos;
 }
 
 void ArbolPedidos::insertar(int clave, string cliente, string fecha, bool estado){

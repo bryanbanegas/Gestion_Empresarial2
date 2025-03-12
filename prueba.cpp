@@ -6,9 +6,13 @@ int main(){
     arbol->insertar(1,"nombre","departamento","puesto",21,true);  
     arbol->insertar(2,"nombre","departamento","puesto",21,true);
     arbol->insertar(3,"nombre","departamento","puesto",21,true);  
-    arbol->insertar(4,"nombre","departamento","puesto",21,true);  
+    arbol->insertar(4,"nombre 4","departamento","puesto",21,true);  
     arbol->insertar(5,"nombre","departamento","puesto",21,true);
     
-    cout<<"Arbol: ";
-    arbol->imprimir();
+    datosEmpleados datos=arbol->buscar(4);
+    if(datos.nombre.empty()){
+        cout<<"NO existe"<<endl;
+    }else{
+        cout<<"Nombre: "<<datos.nombre<<endl;
+    }
 }

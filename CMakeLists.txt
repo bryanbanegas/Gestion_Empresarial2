@@ -7,6 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB_RECURSE SRC_FILES 
     "estructuras/*.cpp" 
     "clases/*.cpp"
-    "prueba.cpp"
+    "main.cpp"
 )
 add_executable(GPS ${SRC_FILES})

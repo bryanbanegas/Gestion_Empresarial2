@@ -297,6 +297,30 @@ estructuras/arbol.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbol.cpp.s
 .PHONY : estructuras/arbol.cpp.s
 
+estructuras/arbolClientes.o: estructuras/arbolClientes.cpp.o
+.PHONY : estructuras/arbolClientes.o
+
+# target to build an object file
+estructuras/arbolClientes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolClientes.cpp.o
+.PHONY : estructuras/arbolClientes.cpp.o
+
+estructuras/arbolClientes.i: estructuras/arbolClientes.cpp.i
+.PHONY : estructuras/arbolClientes.i
+
+# target to preprocess a source file
+estructuras/arbolClientes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolClientes.cpp.i
+.PHONY : estructuras/arbolClientes.cpp.i
+
+estructuras/arbolClientes.s: estructuras/arbolClientes.cpp.s
+.PHONY : estructuras/arbolClientes.s
+
+# target to generate assembly for a file
+estructuras/arbolClientes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolClientes.cpp.s
+.PHONY : estructuras/arbolClientes.cpp.s
+
 estructuras/arbolEmpleados.o: estructuras/arbolEmpleados.cpp.o
 .PHONY : estructuras/arbolEmpleados.o
 
@@ -321,29 +345,101 @@ estructuras/arbolEmpleados.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolEmpleados.cpp.s
 .PHONY : estructuras/arbolEmpleados.cpp.s
 
-prueba.o: prueba.cpp.o
-.PHONY : prueba.o
+estructuras/arbolInventario.o: estructuras/arbolInventario.cpp.o
+.PHONY : estructuras/arbolInventario.o
 
 # target to build an object file
-prueba.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/prueba.cpp.o
-.PHONY : prueba.cpp.o
+estructuras/arbolInventario.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolInventario.cpp.o
+.PHONY : estructuras/arbolInventario.cpp.o
 
-prueba.i: prueba.cpp.i
-.PHONY : prueba.i
+estructuras/arbolInventario.i: estructuras/arbolInventario.cpp.i
+.PHONY : estructuras/arbolInventario.i
 
 # target to preprocess a source file
-prueba.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/prueba.cpp.i
-.PHONY : prueba.cpp.i
+estructuras/arbolInventario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolInventario.cpp.i
+.PHONY : estructuras/arbolInventario.cpp.i
 
-prueba.s: prueba.cpp.s
-.PHONY : prueba.s
+estructuras/arbolInventario.s: estructuras/arbolInventario.cpp.s
+.PHONY : estructuras/arbolInventario.s
 
 # target to generate assembly for a file
-prueba.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/prueba.cpp.s
-.PHONY : prueba.cpp.s
+estructuras/arbolInventario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolInventario.cpp.s
+.PHONY : estructuras/arbolInventario.cpp.s
+
+estructuras/arbolPedidos.o: estructuras/arbolPedidos.cpp.o
+.PHONY : estructuras/arbolPedidos.o
+
+# target to build an object file
+estructuras/arbolPedidos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolPedidos.cpp.o
+.PHONY : estructuras/arbolPedidos.cpp.o
+
+estructuras/arbolPedidos.i: estructuras/arbolPedidos.cpp.i
+.PHONY : estructuras/arbolPedidos.i
+
+# target to preprocess a source file
+estructuras/arbolPedidos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolPedidos.cpp.i
+.PHONY : estructuras/arbolPedidos.cpp.i
+
+estructuras/arbolPedidos.s: estructuras/arbolPedidos.cpp.s
+.PHONY : estructuras/arbolPedidos.s
+
+# target to generate assembly for a file
+estructuras/arbolPedidos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolPedidos.cpp.s
+.PHONY : estructuras/arbolPedidos.cpp.s
+
+estructuras/arbolVentas.o: estructuras/arbolVentas.cpp.o
+.PHONY : estructuras/arbolVentas.o
+
+# target to build an object file
+estructuras/arbolVentas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolVentas.cpp.o
+.PHONY : estructuras/arbolVentas.cpp.o
+
+estructuras/arbolVentas.i: estructuras/arbolVentas.cpp.i
+.PHONY : estructuras/arbolVentas.i
+
+# target to preprocess a source file
+estructuras/arbolVentas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolVentas.cpp.i
+.PHONY : estructuras/arbolVentas.cpp.i
+
+estructuras/arbolVentas.s: estructuras/arbolVentas.cpp.s
+.PHONY : estructuras/arbolVentas.s
+
+# target to generate assembly for a file
+estructuras/arbolVentas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/estructuras/arbolVentas.cpp.s
+.PHONY : estructuras/arbolVentas.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS.dir/build.make CMakeFiles/GPS.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -375,12 +471,24 @@ help:
 	@echo "... estructuras/arbol.o"
 	@echo "... estructuras/arbol.i"
 	@echo "... estructuras/arbol.s"
+	@echo "... estructuras/arbolClientes.o"
+	@echo "... estructuras/arbolClientes.i"
+	@echo "... estructuras/arbolClientes.s"
 	@echo "... estructuras/arbolEmpleados.o"
 	@echo "... estructuras/arbolEmpleados.i"
 	@echo "... estructuras/arbolEmpleados.s"
-	@echo "... prueba.o"
-	@echo "... prueba.i"
-	@echo "... prueba.s"
+	@echo "... estructuras/arbolInventario.o"
+	@echo "... estructuras/arbolInventario.i"
+	@echo "... estructuras/arbolInventario.s"
+	@echo "... estructuras/arbolPedidos.o"
+	@echo "... estructuras/arbolPedidos.i"
+	@echo "... estructuras/arbolPedidos.s"
+	@echo "... estructuras/arbolVentas.o"
+	@echo "... estructuras/arbolVentas.i"
+	@echo "... estructuras/arbolVentas.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
